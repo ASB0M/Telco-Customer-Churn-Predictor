@@ -1,6 +1,36 @@
 # Telco Customer Churn Predictor 🔮
 
-An interactive machine learning application built with **Streamlit** and **XGBoost** to predict customer churn in the telecommunications industry. This project allows users to input customer demographics, service details, and billing information to assess the likelihood of churn in real-time.
+An interactive machine learning application built with **Streamlit** and **XGBooThis project aims to predict customer churn in a telecommunications company using machine learning techniques. It includes a complete pipeline from data cleaning and exploratory data analysis (EDA) to model training and deployment via an interactive Streamlit application.
+
+## Бизнес Context
+Customer churn (attrition) is a critical metric for subscription-based businesses like telecommunications companies. It is significantly more expensive to acquire a new customer than to retain an existing one. By identifying customers who are at high risk of churning, the company can:
+*   **Proactively intervene** with targeted retention campaigns (e.g., discounts, special offers).
+*   **Improve customer satisfaction** by addressing pain points.
+*   ** Optimize revenue** by reducing the loss of recurring income.
+
+This project enables the company to move from reactive to proactive churn management.
+
+## Key Performance Metrics
+To evaluate the models, we focus on the following metrics:
+*   **Accuracy:** The ratio of correctly predicted observations to the total observations. It gives a general idea of model performance but can be misleading in imbalanced datasets.
+*   **F1-Score:** The weighted average of Precision and Recall. It is useful when the class distribution is uneven (churners vs. non-churners), as it balances false positives and false negatives.
+*   **ROC-AUC (Receiver Operating Characteristic - Area Under Curve):** Measures the model's ability to distinguish between classes. A higher AUC (closer to 1) allows the model to better rank customers by their churn probability.
+
+## Model Comparison
+We evaluated three different models to identify the best performer for this task:
+
+| Model | Accuracy | F1-Score (Weighted) | ROC-AUC |
+| :--- | :--- | :--- | :--- |
+| **Logistic Regression** | 74% | 0.75 | **0.84** |
+| **Random Forest** | **78%** | **0.77** | 0.81 |
+| **XGBoost** | 76% | **0.77** | 0.82 |
+
+### Analysis
+*   **Logistic Regression** achieved the highest **ROC-AUC (0.84)**, suggesting it is excellent at ranking customers by risk, even if its hard classification accuracy is slightly lower. It provides good interpretability.
+*   **Random Forest** yielded the highest **Accuracy (78%)**, making it a strong candidate for overall correctness.
+*   **XGBoost** offered a balanced performance with high F1-score and valid ROC-AUC. It handles complex non-linear relationships well and is often robust against overfitting.
+
+*Note: The deployed application primarily uses the **XGBoost** model due to its speed, performance balance, and ability to handle various data features effectively.*od of churn in real-time.
 
 ## Project Overview
 
