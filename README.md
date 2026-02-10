@@ -1,6 +1,6 @@
 # Telco Customer Churn Predictor 🔮
 
-An interactive machine learning application built with **Streamlit** and **XGBooThis project aims to predict customer churn in a telecommunications company using machine learning techniques. It includes a complete pipeline from data cleaning and exploratory data analysis (EDA) to model training and deployment via an interactive Streamlit application.
+An interactive machine learning application built with **Streamlit** and **XGBoost** This project aims to predict customer churn in a telecommunications company using machine learning techniques. It includes a complete pipeline from data cleaning and exploratory data analysis (EDA) to model training and deployment via an interactive Streamlit application.
 
 ## Business Context
 Customer churn (attrition) is a critical metric for subscription-based businesses like telecommunications companies. It is significantly more expensive to acquire a new customer than to retain an existing one. By identifying customers who are at high risk of churning, the company can:
