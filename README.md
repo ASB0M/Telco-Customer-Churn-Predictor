@@ -2,11 +2,11 @@
 
 An interactive machine learning application built with **Streamlit** and **XGBooThis project aims to predict customer churn in a telecommunications company using machine learning techniques. It includes a complete pipeline from data cleaning and exploratory data analysis (EDA) to model training and deployment via an interactive Streamlit application.
 
-## Бизнес Context
+## Business Context
 Customer churn (attrition) is a critical metric for subscription-based businesses like telecommunications companies. It is significantly more expensive to acquire a new customer than to retain an existing one. By identifying customers who are at high risk of churning, the company can:
 *   **Proactively intervene** with targeted retention campaigns (e.g., discounts, special offers).
 *   **Improve customer satisfaction** by addressing pain points.
-*   ** Optimize revenue** by reducing the loss of recurring income.
+*   **Optimize revenue** by reducing the loss of recurring income.
 
 This project enables the company to move from reactive to proactive churn management.
 
